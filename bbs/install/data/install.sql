@@ -369,6 +369,7 @@ DROP TABLE IF EXISTS pre_common_connect_guest;
 CREATE TABLE pre_common_connect_guest (
   conopenid char(32) NOT NULL DEFAULT '',
   conuin char(40) NOT NULL DEFAULT '',
+  conuintoken char(32) NOT NULL DEFAULT '',
   conuinsecret char(16) NOT NULL DEFAULT '',
   conqqnick char(100) NOT NULL DEFAULT '',
   PRIMARY KEY (conopenid)
@@ -691,6 +692,7 @@ DROP TABLE IF EXISTS pre_common_member_connect;
 CREATE TABLE pre_common_member_connect (
   uid mediumint(8) unsigned NOT NULL DEFAULT '0',
   conuin char(40) NOT NULL DEFAULT '',
+  conuintoken char(32) NOT NULL DEFAULT '',
   conuinsecret char(16) NOT NULL DEFAULT '',
   conopenid char(32) NOT NULL DEFAULT '',
   conisfeed tinyint(1) unsigned NOT NULL DEFAULT '0',
